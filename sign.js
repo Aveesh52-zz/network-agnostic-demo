@@ -147,7 +147,7 @@ document.getElementById('withdrawBtn').onclick = async () => {
 
 async function executeAndDisplay(txObj, el) {
   const response = await request.post(
-    'http://localhost:3000/exec', {
+    'https://networkagnostic.herokuapp.com/exec', {
       json: txObj,
     },
     (error, res, body) => {
